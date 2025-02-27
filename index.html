@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/document-mock.js"></script>
+    <script src="./js/country-names.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
+  </head>
+  <body>
+    <form novalidate>
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <span class="error" aria-live="polite"></span>
+      <label for="postalCode">Postal Code</label>
+      <input
+        type="text"
+        id="postalCode"
+        pattern="([A-Za-z0-9\s\-]{3,10})"
+        minlength="3"
+        maxlength="10"
+        required
+      />
+      <span class="error" aria-live="polite"></span>
+      <label for="country">Country</label>
+      <select id="country" required></select>
+      <span class="error" aria-live="polite"></span>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        pattern="((?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20})"
+        minlength="8"
+        maxlength="20"
+        required
+      />
+      <span class="error" aria-live="polite"></span>
+      <label for="confirmPassword">Confirmation Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        pattern="((?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20})"
+        minlength="8"
+        maxlength="20"
+        required
+      />
+      <span class="error" aria-live="polite"></span>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

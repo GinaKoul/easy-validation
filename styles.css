@@ -1,0 +1,59 @@
+body {
+  background: #014b47;
+  font-size: 16px;
+}
+
+form {
+  translate: 0 calc(100vh / 2 - 50%);
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  max-width: 400px;
+  padding: 24px;
+}
+
+input,
+select {
+  width: calc(100% - 48px);
+  appearance: none;
+  outline: none;
+  border: 1px solid gray;
+  padding: 4px 8px;
+  font-size: 80%;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+label:has(+ input:required):after {
+  content: "*";
+}
+
+input:valid,
+select:valid {
+  border-color: #00ff62;
+}
+
+input:invalid,
+select:invalid {
+  border-color: #ff0022;
+}
+
+.error {
+  padding: 0;
+  display: inline-block;
+  width: calc(100% - 39px);
+  background: #ff0022;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.error.active {
+  padding: 4px;
+}
+
+button {
+  background-color: #014b47;
+  color: #fff;
+}
