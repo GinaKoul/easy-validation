@@ -1,0 +1,47 @@
+{
+  "name": "@ginakoul/easy-validation",
+  "description": "Validation library with custom validation and error message options",
+  "version": "0.0.1",
+  "author": "ginakoul",
+  "module": "./dist/easy-validation.js",
+  "browser": "./dist/easy-validation.js",
+  "main": "./dist/easy-validation.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GinaKoul/easy-validation"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/GinaKoul/easy-validation#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "file-loader": "^6.2.0",
+    "globals": "^15.15.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "prettier": "3.5.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "scripts": {
+    "test-rules": "npx eslint-config-prettier src/assets/js/*",
+    "scan": "npx eslint src/assets/js/*",
+    "test-format": "npx prettier src/assets/**/* --check",
+    "format": "npx prettier src/assets/**/* --write",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js --open",
+    "deploy": "git checkout gh-pages && git merge main --no-edit && npm run build && git add dist -f && git commit -m 'Deployment commit' && git subtree push --prefix dist origin gh-pages && git checkout main"
+  },
+  "engines": {
+    "node": ">=v22.13.1",
+    "npm": ">=10.9.2"
+  }
+}

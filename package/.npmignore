@@ -1,0 +1,22 @@
+
+# source code
+src
+
+#example folder
+example
+
+# compiler
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
+
+#  lint
+eslintrc.config.mjs
+.prettierignore
+.prettierrc
+
+# IDE - VSCode
+.vscode
+
+# git
+.git

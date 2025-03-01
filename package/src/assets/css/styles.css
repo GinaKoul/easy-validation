@@ -1,0 +1,11 @@
+.error {
+  padding: 0;
+  display: block;
+  width: auto;
+  background: #ff0022;
+  color: #fff;
+}
+
+.error.active {
+  padding: 8px;
+}

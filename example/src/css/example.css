@@ -10,11 +10,12 @@ form {
   background: #fff;
   max-width: 400px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 input,
 select {
-  width: calc(100% - 48px);
   appearance: none;
   outline: none;
   border: 1px solid gray;
@@ -23,6 +24,9 @@ select {
 }
 
 label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 8px;
   font-size: 1.25rem;
 }
 
@@ -40,20 +44,8 @@ select:invalid {
   border-color: #ff0022;
 }
 
-.error {
-  padding: 0;
-  display: inline-block;
-  width: calc(100% - 39px);
-  background: #ff0022;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-.error.active {
-  padding: 4px;
-}
-
 button {
+  margin-top: 32px;
   background-color: #014b47;
   color: #fff;
 }

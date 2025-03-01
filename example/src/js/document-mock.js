@@ -1,4 +1,4 @@
-const documentMock = (() => ({
+export const documentMock = (() => ({
   querySelector: () => ({
     innerHtml: null,
   }),
