@@ -1,7 +1,7 @@
 {
   "name": "@ginakoul/easy-validation",
   "description": "Validation library with custom validation and error message options",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "ginakoul",
   "module": "./dist/easy-validation.js",
   "browser": "./dist/easy-validation.js",

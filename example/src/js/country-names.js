@@ -1,4 +1,4 @@
-const countryNames = {
+export const countryNames = {
   AF: "Afghanistan",
   AL: "Albania",
   DZ: "Algeria",
@@ -82,7 +82,6 @@ const countryNames = {
   GI: "Gibraltar",
   GR: "Greece",
   GL: "Greenland",
-  GD: "Grenada",
   GP: "Guadeloupe",
   GU: "Guam",
   GT: "Guatemala",
@@ -158,7 +157,6 @@ const countryNames = {
   NU: "Niue",
   NF: "Norfolk Island",
   NO: "Norway",
-  NP: "Nepal",
   OM: "Oman",
   PK: "Pakistan",
   PW: "Palau",
@@ -225,7 +223,6 @@ const countryNames = {
   UG: "Uganda",
   UA: "Ukraine",
   AE: "United Arab Emirates",
-  GB: "United Kingdom",
   US: "United States",
   UY: "Uruguay",
   UZ: "Uzbekistan",

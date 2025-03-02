@@ -1,12 +1,12 @@
 import "../css/example.css";
 import { countryNames } from "./country-names.js";
 import { documentMock } from "./document-mock.js";
-import "/node_modules/@ginakoul/easy-validation/dist/easy-validation.css";
+import "@ginakoul/easy-validation/dist/easy-validation.css";
 import {
   ErrorMessages,
   CustomValidations,
   Validation,
-} from "/node_modules/@ginakoul/easy-validation/dist/easy-validation.js";
+} from "@ginakoul/easy-validation/dist/easy-validation.js";
 
 (function (doc) {
   let countrySelect;
